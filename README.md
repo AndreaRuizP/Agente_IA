@@ -45,8 +45,13 @@ npm create vite@latest frontend
 npm install tailwindcss @tailwindcss/vite
 npm run dev
 
+libreria: npm install react-router-dom axios
+
 Backend: Django
 
-python -m django startproject backend .
+python -m venv venv
+venv\Scripts\activate
+pip install django djangorestframework psycopg2-binary django-cors-headers
+django-admin startproject config .
+python manage.py startapp api
 python manage.py runserver
-
