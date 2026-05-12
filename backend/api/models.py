@@ -14,6 +14,7 @@ class Producto(models.Model):
         on_delete=models.CASCADE
     )
 
+    imagen = models.URLField(blank=True, null=True)
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
     precio = models.DecimalField(
