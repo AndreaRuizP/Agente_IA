@@ -58,9 +58,10 @@ class Pedido(models.Model):
 class DetallePedido(models.Model):
 
     pedido = models.ForeignKey(
-        Pedido,
-        on_delete=models.CASCADE
-    )
+    Pedido,
+    on_delete=models.CASCADE,
+    related_name='detalles'
+)
 
     producto = models.ForeignKey(
         Producto,

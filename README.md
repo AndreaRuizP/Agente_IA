@@ -55,3 +55,10 @@ pip install django djangorestframework psycopg2-binary django-cors-headers
 django-admin startproject config .
 python manage.py startapp api
 python manage.py runserver
+
+IA: Ollama
+
+Tenerlo siempre en ejcución
+ollama run gemma:2b
+
+
